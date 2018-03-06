@@ -1,5 +1,7 @@
 #Práctica 1
 
+Integrantes: Rubén Calvo Villazán y Marta Arenas Martínez
+
 ##Instalación en VirtualBox
 
 Para crear la máquina, primero se le dice que sistema operativo tiene (Linux). En mi caso, he dejado los tamaños de memoria y disco que venían por defecto. 
