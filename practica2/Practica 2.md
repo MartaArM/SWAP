@@ -74,7 +74,7 @@ ssh server2
 
 Si queremos que la tarea rsync se ejecute una vez cada hora, deberemos indicarle un minuto cualquiera (por ejemplo el minuto 0), de todas las horas, todos los días, cualquier día de la semana, etc.
 
-![](images/7.png)
+![](images/8.png)
 
 
 
