@@ -17,6 +17,7 @@ Una vez dentro, hacemos lo siguiente:
 * Utilizar la base de datos a la que queremos añadir cosas: *use contactos;*
 * Crear la tabla: *create table datos(nombre varchar(100),tlf int);*
      ![](./images/tabla-añadida.png)
+
 * Insertar datos: *insert into datos values("marta", 958000000);* y *insert into datos values("ruben", 958111111);*
      ![](./images/comprobamos-datos.png)
 
