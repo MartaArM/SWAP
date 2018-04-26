@@ -17,7 +17,6 @@ Una vez dentro, hacemos lo siguiente:
 * Utilizar la base de datos a la que queremos añadir cosas: *use contactos;*
 * Crear la tabla: *create table datos(nombre varchar(100),tlf int);*
      ![](./images/tabla-añadida.png)
-
 * Insertar datos: *insert into datos values("marta", 958000000);* y *insert into datos values("ruben", 958111111);*
      ![](./images/comprobamos-datos.png)
 
@@ -93,8 +92,13 @@ Para asegurarnos de que funciona, nos vamos al cliente y ejecutamos la orden sig
 
 ![](./images/seconds-behind-master-correcto.png)
 
+En nuestro caso, tuvimos un problema. Salió el error de que ambas máquinas, maestro y esclavo, tenían el mismo UUID. Para solucionar el error, sólo tuvimos que borrar el archivo */var/lib/mysql/auto.cnf* y reiniciar MySQL.
+
+Asi, cuando iniciamos MySQL, la máquina esclava crea un nuevo UUID distinto al del maestro.
+
 Podemos ver que el valor de la variable *Seconds_Behind_Master* es 0, lo que nos demuestra que la configuración está bien hecha.
 
 Para comproblar que funciona, tenemos que ver que, si hacemos un cambio en la base de datos del maestro, se verá reflejado en el esclavo.
 
-![](./images/)
+![](./images/aniadir-principal.png)
+![](./images/aniadido-secundaria.png)
